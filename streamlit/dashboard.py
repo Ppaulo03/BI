@@ -1,7 +1,7 @@
 import streamlit as st        
 import pandas as pd           
 df = pd.read_csv("veiculos.csv" , encoding='latin-1', sep=';')
-print(df.head())
+
 #Rename columns
 df.rename(columns={"Frota de Veículos - Total (número)": "Frota", 
                    "Acidentes de Trânsito - Total (número)": "Acidentes"}, inplace=True)
